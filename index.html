@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     WETLAND PROPERTY SERVICES — marketing site (single file)
+     Everything you'd normally change lives in the CONFIG block
+     in the script section near the BOTTOM of this file:
+     phone, prices, services, items, cities, FAQ, booking link.
+     Edit values, save, re-upload to GitHub. That's it.
+     ============================================================ -->
+
+<title>Junk Removal Port St. Lucie, FL | Wetland Property Services — Treasure Coast</title>
+<meta name="description" content="Junk removal, estate & garage cleanouts, and storm recovery in Port St. Lucie and across the Treasure Coast. Upfront load-based pricing, licensed & insured. Call (561) 371-7073.">
+<link rel="canonical" href="https://wetlandpropertyservices.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Junk Removal Port St. Lucie | Wetland Property Services">
+<meta property="og:description" content="Treasure Coast junk removal, done right. Cleanouts, hauling, storm recovery. Upfront pricing, licensed & insured.">
+<meta property="og:locale" content="en_US">
+<meta name="theme-color" content="#0E1B2A">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0E1B2A;          /* page background — deep navy */
+  --panel:#152840;        /* card background */
+  --panel-2:#1C3452;      /* raised card / hover */
+  --line:#2C4763;         /* hairlines */
+  --brand:#5C9BD6;        /* accent — sky blue */
+  --brand-soft:#8ABBE8;   /* hover / highlights */
+  --text:#F2F6FA;         /* primary text */
+  --muted:#9DB2C6;        /* secondary text */
+  --radius:14px;
+  --max:1100px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);color:var(--text);
+  font-family:'Barlow',system-ui,-apple-system,sans-serif;
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Barlow Condensed',sans-serif;line-height:1.05;text-transform:uppercase;letter-spacing:.01em}
+h1{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:800}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:700}
+a{color:var(--brand-soft)}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.eyebrow{
+  color:var(--brand);font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  text-transform:uppercase;letter-spacing:.14em;font-size:.95rem;margin-bottom:10px;
+}
+.muted{color:var(--muted)}
+.lead{margin-top:12px;max-width:640px;color:var(--muted)}
+
+.btn{
+  display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  text-transform:uppercase;letter-spacing:.05em;font-size:1.15rem;
+  padding:16px 34px;border-radius:10px;text-decoration:none;text-align:center;
+  transition:transform .15s ease,background .15s ease,color .15s ease;
+}
+.btn-brand{background:var(--brand);color:#0A1522}
+.btn-brand:hover{background:var(--brand-soft);transform:translateY(-2px)}
+.btn-ghost{border:2px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-soft)}
+a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--brand-soft);outline-offset:3px}
+
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(14,27,42,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:var(--max);margin:0 auto}
+.logo{
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;
+  font-size:1.3rem;color:var(--text);text-decoration:none;letter-spacing:.03em;line-height:1.1;
+}
+.logo span{color:var(--brand)}
+.nav-phone{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;
+  color:var(--brand);text-decoration:none;white-space:nowrap;
+}
+.nav-phone:hover{color:var(--brand-soft)}
+
+/* Hero */
+.hero{padding:64px 0 80px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;top:-220px;right:-180px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(92,155,214,.16),transparent);pointer-events:none;
+}
+.hero-logo{
+  display:block;width:100%;height:auto;border-radius:12px;margin-bottom:28px;
+  border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+.hero h1{
+  background:linear-gradient(180deg,#FFFFFF 0%,#DCE6EF 45%,#9FB4C8 55%,#F0F5FA 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero h1 .accent{-webkit-text-fill-color:var(--brand);color:var(--brand)}
+.hero p.sub{font-size:1.2rem;max-width:560px;margin:18px 0 30px;color:var(--muted)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-badges{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;color:var(--muted);font-size:.95rem}
+.hero-badges b{color:var(--text);font-weight:600}
+
+/* Cards (shared) */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:34px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 22px;display:flex;flex-direction:column;gap:12px;
+  transition:border-color .2s ease,transform .2s ease;
+}
+.card:hover{border-color:var(--brand);transform:translateY(-3px)}
+.card .icon{width:42px;height:42px;color:var(--brand)}
+.card p{color:var(--muted);font-size:.95rem}
+.card .price{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.3rem;color:var(--brand)}
+.gauge{height:54px}
+.gauge .bed{fill:none;stroke:var(--line);stroke-width:3}
+.gauge .fill{fill:var(--brand);opacity:.85}
+.gauge .wheel{fill:var(--panel-2);stroke:var(--line);stroke-width:3}
+.card ul{list-style:none;color:var(--muted);font-size:.95rem}
+.card ul li{padding:3px 0}
+.card ul li::before{content:"— ";color:var(--brand)}
+.pricing-note{margin-top:18px;color:var(--muted);font-size:.95rem;max-width:640px}
+
+/* What we take */
+.take{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.take .card{background:var(--ink)}
+.take-note{margin-top:20px;color:var(--muted);font-size:.95rem;max-width:680px}
+
+/* How it works */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:34px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px}
+.step .n{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:50%;background:var(--brand);color:#0A1522;
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;margin-bottom:14px;
+}
+.step p{color:var(--muted);font-size:.98rem}
+
+/* Service area */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{
+  border:1px solid var(--line);border-radius:999px;padding:8px 18px;
+  font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1.05rem;
+  text-transform:uppercase;letter-spacing:.04em;color:var(--text);
+}
+.chip.home{border-color:var(--brand);color:var(--brand)}
+.area p.note{margin-top:20px;color:var(--muted);max-width:640px}
+
+/* Trust */
+.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:34px}
+.trust{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px}
+.trust h3{color:var(--brand);margin-bottom:8px}
+.trust p{color:var(--muted);font-size:.98rem}
+blockquote{
+  border-left:3px solid var(--brand);padding:6px 0 6px 18px;margin-top:14px;
+  font-style:italic;color:var(--text);
+}
+blockquote footer{font-style:normal;color:var(--muted);font-size:.9rem;margin-top:6px}
+
+/* FAQ */
+.faq-list{margin-top:30px;display:flex;flex-direction:column;gap:12px;max-width:760px}
+details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:0;overflow:hidden;
+}
+details[open]{border-color:var(--brand)}
+summary{
+  cursor:pointer;list-style:none;padding:18px 22px;
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;
+  text-transform:uppercase;letter-spacing:.02em;display:flex;justify-content:space-between;gap:12px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brand);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details .a{padding:0 22px 20px;color:var(--muted)}
+
+/* CTA band */
+.cta-band{text-align:center;border-top:1px solid var(--line)}
+.cta-band h2 .accent{color:var(--brand)}
+.cta-band .hero-ctas{justify-content:center;margin-top:26px}
+
+/* Footer */
+footer.site{border-top:1px solid var(--line);padding:44px 0 120px;color:var(--muted);font-size:.95rem}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
+footer.site h3{color:var(--text);font-size:1.1rem;margin-bottom:10px}
+footer.site a{text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .legal{margin-top:34px;border-top:1px solid var(--line);padding-top:18px;font-size:.85rem}
+
+/* Sticky mobile call bar */
+.callbar{
+  position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;
+  background:var(--brand);box-shadow:0 -4px 18px rgba(0,0,0,.4);
+}
+.callbar .inner{display:flex}
+.callbar a{
+  flex:1;text-align:center;padding:16px 8px;text-decoration:none;
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;
+  text-transform:uppercase;letter-spacing:.04em;color:#0A1522;
+}
+.callbar a + a{border-left:1px solid rgba(10,21,34,.3)}
+@media (max-width:760px){
+  .callbar{display:block}
+  section{padding:56px 0}
+  .hero{padding:48px 0 56px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.card{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top">Wetland <span>Property Services</span></a>
+    <a class="nav-phone" href="tel:+15613717073" data-cfg="phoneHref phoneText">(561) 371-7073</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-logo" src="logo.webp" alt="Wetland Property Services logo" fetchpriority="high" data-cfg="logoSrc" onerror="this.style.display='none'">
+    <p class="eyebrow">Junk Removal &amp; Cleanouts · Port St. Lucie, FL</p>
+    <h1 data-cfg="tagline">Treasure Coast Junk Removal, <span class="accent">Done Right.</span></h1>
+    <p class="sub">From a single couch to a whole-property cleanout — send us a couple of photos, get an upfront quote, and we haul it away. Locally owned, licensed &amp; insured.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-brand" href="https://nexfieldpro.com/book.html" data-cfg="bookHref">Get a Free Quote</a>
+      <a class="btn btn-ghost" href="tel:+15613717073" data-cfg="phoneHref">Call <span data-cfg="phoneText">(561) 371-7073</span></a>
+    </div>
+    <div class="hero-badges">
+      <span><b>Licensed &amp; insured</b></span>
+      <span><b>Upfront pricing</b> — no surprises</span>
+      <span><b>Same-week service</b> in most cases</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">What We Do</p>
+    <h2>Cleanouts &amp; hauling for every job size</h2>
+    <p class="lead">Homes, offices, estates, storage units — if it needs to be cleared, loaded, and gone, that's us.</p>
+    <div class="cards" id="serviceCards"><!-- rendered from CONFIG.services --></div>
+  </div>
+</section>
+
+<!-- WHAT WE TAKE -->
+<section class="take" id="items">
+  <div class="wrap">
+    <p class="eyebrow">What We Take</p>
+    <h2>If it's heavy, bulky, or in the way — we take it</h2>
+    <div class="cards" id="takeCards"><!-- rendered from CONFIG.items --></div>
+    <p class="take-note" id="takeNote"><!-- rendered from CONFIG.itemsNote --></p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2>Pay by the load. Simple.</h2>
+    <p class="lead">Your price is based on how much space your junk takes up in the truck — measured on site, agreed before we lift a thing.</p>
+    <div class="cards" id="priceCards"><!-- rendered from CONFIG.prices --></div>
+    <p class="pricing-note">Single-item pickups start at <b data-cfg="minPrice">$99</b>. Price includes labor, loading, hauling, and disposal fees. Heavy materials (concrete, dirt, roofing) quoted separately — just send photos.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow">How It Works</p>
+    <h2>Three steps to a clear space</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <h3>Send photos</h3>
+        <p>Tap “Get a Free Quote,” snap a few photos of your junk, and tell us your address. Takes about two minutes.</p>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <h3>Get your quote</h3>
+        <p>We text you an upfront, load-based price — usually the same day. No site-visit fee, no obligation.</p>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <h3>We haul it away</h3>
+        <p>Pick a time that works. Our crew does all the lifting, sweeps up, and it's gone. Done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="take area" id="area">
+  <div class="wrap">
+    <p class="eyebrow">Service Area</p>
+    <h2>Serving Port St. Lucie &amp; the Treasure Coast</h2>
+    <div class="chips" id="cityChips"><!-- rendered from CONFIG.cities --></div>
+    <p class="note">Based in Port St. Lucie, FL — we regularly serve St. Lucie, Martin, and Indian River counties. Not sure if you're in range? <a href="tel:+15613717073" data-cfg="phoneHref">Call us</a> — if we can get a truck there, we will.</p>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+  <div class="wrap">
+    <p class="eyebrow">Why Us</p>
+    <h2>Local, licensed, and easy to work with</h2>
+    <div class="trust-grid">
+      <div class="trust">
+        <h3>Licensed &amp; Insured</h3>
+        <p>Fully licensed and insured for residential and commercial junk removal. Your property is protected on every job.</p>
+      </div>
+      <div class="trust">
+        <h3>Upfront Pricing</h3>
+        <p>The price we quote is the price you pay. Load-based rates agreed before we start — never a surprise on the invoice.</p>
+      </div>
+      <div class="trust">
+        <h3>Neighbors, Not a Franchise</h3>
+        <p>Locally owned and operated on the Treasure Coast. When you call, you talk to the people who show up.</p>
+        <blockquote id="reviewQuote"></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2>Quick answers</h2>
+    <div class="faq-list" id="faqList"><!-- rendered from CONFIG.faq --></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Ready to get it <span class="accent">gone?</span></h2>
+    <p class="muted" style="margin-top:10px">Free quotes. Upfront prices. Your space back.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-brand" href="https://nexfieldpro.com/book.html" data-cfg="bookHref">Get a Free Quote</a>
+      <a class="btn btn-ghost" href="tel:+15613717073" data-cfg="phoneHref">Call <span data-cfg="phoneText">(561) 371-7073</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Wetland Property Services</h3>
+        <p>Junk removal, cleanouts, and storm recovery for homes and businesses across Port St. Lucie and the Treasure Coast.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+15613717073" data-cfg="phoneHref phoneText">(561) 371-7073</a><br>
+        Port St. Lucie, FL</p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p data-cfg="hoursText">Mon–Sat, 8am–6pm</p>
+      </div>
+    </div>
+    <p class="legal">© <span id="year"></span> Wetland Property Services. All rights reserved. Licensed &amp; insured. Serving St. Lucie, Martin &amp; Indian River counties.</p>
+  </div>
+</footer>
+
+<div class="callbar" role="navigation" aria-label="Quick contact">
+  <div class="inner">
+    <a href="tel:+15613717073" data-cfg="phoneHref">📞 Call Now</a>
+    <a href="https://nexfieldpro.com/book.html" data-cfg="bookHref">Get a Free Quote</a>
+  </div>
+</div>
+
+<script>
+/* ==============================================================
+   EDIT ME: CONFIG — everything you'd realistically change.
+   Edit values here, save the file, re-upload to GitHub. That's it.
+   ============================================================== */
+const CONFIG = {
+  businessName: "Wetland Property Services",
+  tagline: "Treasure Coast Junk Removal, Done Right.",       // hero headline. Text after the last comma turns blue.
+  phoneDisplay: "(561) 371-7073",
+  phoneDial: "+15613717073",                                 // keep the +1, digits only
+  bookingUrl: "https://nexfieldpro.com/book.html",           // ← swap this ONE line if you move booking to your own domain
+  siteUrl: "https://wetlandpropertyservices.com/",
+  logoFile: "logo.webp",                                     // logo image in your repo. Set to "" to hide it.
+  hours: "Mon–Sat, 8am–6pm",
+
+  minItemPrice: "$99",
+
+  /* -------- SERVICES (cards under "What We Do") --------
+     icon options: garage, yard, estate, office, storage, storm, single, trash */
+  services: [
+    { icon: "garage",  name: "Garage Cleanouts",      desc: "Reclaim your parking spot. Years of buildup cleared in one visit — you point, we haul." },
+    { icon: "yard",    name: "Yard & Patio Cleanouts", desc: "Old patio furniture, grills, planters, green waste, and debris — cleared and swept." },
+    { icon: "estate",  name: "Estate Cleanouts",       desc: "Respectful, full-property clearing on your schedule. Room by room, left broom-clean." },
+    { icon: "office",  name: "Office Cleanouts",       desc: "Desks, cubicles, filing cabinets, and e-waste. After-hours and weekend scheduling available." },
+    { icon: "storage", name: "Storage Unit Cleanouts", desc: "Stop paying rent on stuff you don't want. We empty the unit so you can close it out." },
+    { icon: "storm",   name: "Storm Recovery",         desc: "Fallen limbs, fence sections, water-damaged furniture — fast turnaround after Treasure Coast storms." },
+    { icon: "single",  name: "Single-Item Pickup",     desc: "One couch, one fridge, one treadmill — starting at $99, usually gone the same week." },
+    { icon: "trash",   name: "Curbside & Trash Pickup", desc: "Bag it or stack it at the curb and we take it from there. Easy add-on to any job." }
+  ],
+
+  /* -------- WHAT WE TAKE (item categories) -------- */
+  items: [
+    { cat: "Furniture & Mattresses", list: ["Sofas, sectionals & recliners", "Mattresses & box springs", "Dining sets & coffee tables", "Dressers, wardrobes & nightstands", "Bookshelves & filing cabinets"] },
+    { cat: "Appliances",             list: ["Refrigerators & freezers", "Washers & dryers", "Stoves, ovens & dishwashers", "Water heaters & HVAC units", "Microwaves & trash compactors"] },
+    { cat: "Electronics & TVs",      list: ["TVs & monitors", "Computers, laptops & tablets", "Printers, copiers & fax machines", "Stereos & gaming consoles"] },
+    { cat: "Big & Heavy",            list: ["Pianos & pool tables", "Hot tubs (light demo)", "Small sheds (light demo)", "Exercise equipment", "Swing sets & playsets"] },
+    { cat: "Debris & Materials",     list: ["Construction debris", "Carpet & flooring", "Scrap metal", "Yard debris & branches", "Old lawnmowers & tools"] },
+    { cat: "Household & More",       list: ["General trash & clutter", "Boxes & bagged junk", "Single-item pickups"] }
+  ],
+  itemsNote: "Don't see your item? Send a photo — if two people can lift it, we can probably take it. We can't accept hazardous materials like wet paint, chemicals, fuel, or asbestos, but call us and we'll point you to the right local disposal site.",
+
+  cities: [
+    "Port St. Lucie", "Fort Pierce", "Stuart", "Jensen Beach",
+    "Palm City", "St. Lucie West", "Tradition", "Hobe Sound",
+    "Vero Beach", "Hutchinson Island"
+  ],
+
+  prices: [
+    { name: "¼ Load",    price: "$149", fill: 0.25, blurb: ["A few furniture pieces", "Small appliance pickup", "Garage corner cleanup"] },
+    { name: "½ Load",    price: "$279", fill: 0.50, blurb: ["Room's worth of junk", "Multiple large items", "Small shed clear-out"] },
+    { name: "¾ Load",    price: "$389", fill: 0.75, blurb: ["Multi-room cleanup", "Large furniture sets", "Big yard-debris jobs"] },
+    { name: "Full Load", price: "$479", fill: 1.00, blurb: ["Whole-garage cleanout", "Moving leftovers", "Best per-item value"] }
+  ],
+
+  review: {
+    text: "Quoted from my photos in an hour, showed up on time, gone in twenty minutes. Easiest thing I did all week.",
+    author: "— Homeowner, Port St. Lucie"
+  },
+
+  /* -------- FAQ (also feeds Google's FAQ schema) -------- */
+  faq: [
+    { q: "How does pricing work?",
+      a: "By volume — how much space your items fill in the truck, from a single-item minimum up to a full load. You get the exact price before we start, and it includes labor, hauling, and disposal fees." },
+    { q: "Do I need to be home?",
+      a: "Not always. For curbside and garage pickups, many customers just leave items accessible and pay by phone. For indoor jobs we'll coordinate a time that works for you." },
+    { q: "How fast can you come?",
+      a: "Most jobs are scheduled within the same week, and single-item pickups can often be squeezed in sooner. Storm recovery gets priority when the Treasure Coast takes a hit." },
+    { q: "What can't you take?",
+      a: "Hazardous materials — wet paint, chemicals, fuel, oil, and asbestos. If you're not sure about an item, call us and we'll either take it or point you to the right disposal site in St. Lucie County." },
+    { q: "Where does my junk go?",
+      a: "As little as possible goes to the landfill. Usable furniture and appliances get donated when we can, metals and electronics are recycled, and the rest goes to licensed disposal facilities." }
+  ]
+};
+/* ================= end CONFIG — no edits needed below ================= */
+
+(function apply() {
+  // Simple line icons in brand color (stroke-based, 24x24 viewBox)
+  var ICONS = {
+    garage:  '<path d="M3 10 L12 4 L21 10 V20 H3 Z M6 20 V13 H18 V20 M6 16 H18"/>',
+    yard:    '<path d="M12 20 V10 M12 10 C8 10 6 7 6 4 C10 4 12 6 12 10 C12 6 14 4 18 4 C18 7 16 10 12 10 M7 20 H17"/>',
+    estate:  '<path d="M4 20 V9 L12 3 L20 9 V20 H4 Z M9 20 V14 H15 V20"/>',
+    office:  '<path d="M5 20 V4 H15 V20 M15 9 H19 V20 M3 20 H21 M8 8 H11 M8 12 H11 M8 16 H11"/>',
+    storage: '<path d="M3 8 L12 3 L21 8 V19 H3 Z M3 8 H21 M8 12 H16"/>',
+    storm:   '<path d="M6 14 A5 5 0 1 1 8 5 A6 6 0 0 1 19 8 A4 4 0 0 1 18 14 Z M12 14 L9 19 H13 L10 23"/>',
+    single:  '<path d="M4 8 L12 4 L20 8 L12 12 Z M4 8 V16 L12 20 V12 M20 8 V16 L12 20"/>',
+    trash:   '<path d="M5 7 H19 M9 7 V5 H15 V7 M7 7 L8 20 H16 L17 7 M10 11 V16 M14 11 V16"/>'
+  };
+  function iconSvg(name) {
+    var d = ICONS[name] || ICONS.single;
+    return '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>';
+  }
+
+  // Phone + booking links, tagline, misc text
+  document.querySelectorAll("[data-cfg]").forEach(function (el) {
+    var roles = el.getAttribute("data-cfg").split(" ");
+    if (roles.indexOf("phoneHref") !== -1) el.setAttribute("href", "tel:" + CONFIG.phoneDial);
+    if (roles.indexOf("bookHref") !== -1) el.setAttribute("href", CONFIG.bookingUrl);
+    if (roles.indexOf("phoneText") !== -1) el.textContent = CONFIG.phoneDisplay;
+    if (roles.indexOf("minPrice") !== -1) el.textContent = CONFIG.minItemPrice;
+    if (roles.indexOf("hoursText") !== -1) el.textContent = CONFIG.hours;
+    if (roles.indexOf("logoSrc") !== -1) {
+      if (CONFIG.logoFile) { el.setAttribute("src", CONFIG.logoFile); }
+      else { el.style.display = "none"; }
+    }
+    if (roles.indexOf("tagline") !== -1) {
+      var t = CONFIG.tagline, cut = t.lastIndexOf(",");
+      el.innerHTML = "";
+      if (cut === -1) { el.textContent = t; }
+      else {
+        el.appendChild(document.createTextNode(t.slice(0, cut + 1) + " "));
+        var span = document.createElement("span");
+        span.className = "accent";
+        span.textContent = t.slice(cut + 1).trim();
+        el.appendChild(span);
+      }
+    }
+  });
+
+  // Service cards
+  var svcEl = document.getElementById("serviceCards");
+  if (svcEl) {
+    svcEl.innerHTML = "";
+    CONFIG.services.forEach(function (s) {
+      var card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = iconSvg(s.icon) + "<h3></h3><p></p>";
+      card.querySelector("h3").textContent = s.name;
+      card.querySelector("p").textContent = s.desc;
+      svcEl.appendChild(card);
+    });
+  }
+
+  // What-we-take cards
+  var takeEl = document.getElementById("takeCards");
+  if (takeEl) {
+    takeEl.innerHTML = "";
+    CONFIG.items.forEach(function (grp) {
+      var card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = "<h3></h3><ul>" + grp.list.map(function(){return "<li></li>";}).join("") + "</ul>";
+      card.querySelector("h3").textContent = grp.cat;
+      var lis = card.querySelectorAll("li");
+      grp.list.forEach(function (item, i) { lis[i].textContent = item; });
+      takeEl.appendChild(card);
+    });
+  }
+  var tn = document.getElementById("takeNote");
+  if (tn) tn.textContent = CONFIG.itemsNote;
+
+  // Pricing cards with truck-load gauges
+  var cardsEl = document.getElementById("priceCards");
+  if (cardsEl) {
+    cardsEl.innerHTML = "";
+    CONFIG.prices.forEach(function (tier) {
+      var card = document.createElement("div");
+      card.className = "card";
+      var bedW = 120, bedH = 34, bedX = 14, bedY = 4;
+      var fillW = Math.round(bedW * tier.fill);
+      var svg =
+        '<svg class="gauge" viewBox="0 0 170 56" aria-hidden="true">' +
+        '<rect class="fill" x="' + (bedX + bedW - fillW) + '" y="' + bedY + '" width="' + fillW + '" height="' + bedH + '"/>' +
+        '<path class="bed" d="M' + bedX + ' ' + bedY + ' v' + bedH + ' h' + bedW + ' v-' + bedH + '"/>' +
+        '<path class="bed" d="M' + (bedX + bedW) + ' ' + (bedY + bedH) + ' h14 l8 -14 h-14"/>' +
+        '<circle class="wheel" cx="' + (bedX + 24) + '" cy="' + (bedY + bedH + 8) + '" r="8"/>' +
+        '<circle class="wheel" cx="' + (bedX + bedW - 14) + '" cy="' + (bedY + bedH + 8) + '" r="8"/>' +
+        '</svg>';
+      card.innerHTML = svg + '<h3></h3><p class="price"></p><ul>' + tier.blurb.map(function(){return "<li></li>";}).join("") + "</ul>";
+      card.querySelector("h3").textContent = tier.name;
+      card.querySelector(".price").textContent = tier.price;
+      var lis = card.querySelectorAll("ul li");
+      tier.blurb.forEach(function (b, i) { lis[i].textContent = b; });
+      cardsEl.appendChild(card);
+    });
+  }
+
+  // Service-area chips
+  var chipsEl = document.getElementById("cityChips");
+  if (chipsEl) {
+    chipsEl.innerHTML = "";
+    CONFIG.cities.forEach(function (city, i) {
+      var c = document.createElement("span");
+      c.className = "chip" + (i === 0 ? " home" : "");
+      c.textContent = city;
+      chipsEl.appendChild(c);
+    });
+  }
+
+  // Review
+  var rq = document.getElementById("reviewQuote");
+  if (rq) {
+    rq.innerHTML = "";
+    rq.appendChild(document.createTextNode("\u201C" + CONFIG.review.text + "\u201D"));
+    var f = document.createElement("footer");
+    f.textContent = CONFIG.review.author;
+    rq.appendChild(f);
+  }
+
+  // FAQ accordion
+  var faqEl = document.getElementById("faqList");
+  if (faqEl) {
+    faqEl.innerHTML = "";
+    CONFIG.faq.forEach(function (item) {
+      var d = document.createElement("details");
+      var s = document.createElement("summary");
+      s.textContent = item.q;
+      var a = document.createElement("div");
+      a.className = "a";
+      a.textContent = item.a;
+      d.appendChild(s); d.appendChild(a);
+      faqEl.appendChild(d);
+    });
+  }
+
+  // Footer year
+  var y = document.getElementById("year");
+  if (y) y.textContent = String(new Date().getFullYear());
+
+  // LocalBusiness + FAQ schema for Google (generated from CONFIG so it never drifts)
+  var biz = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": CONFIG.businessName,
+    "description": "Junk removal, garage and estate cleanouts, storage unit cleanouts, and storm recovery in Port St. Lucie, FL and across the Treasure Coast. Load-based upfront pricing, licensed and insured.",
+    "url": CONFIG.siteUrl,
+    "telephone": CONFIG.phoneDial,
+    "priceRange": CONFIG.minItemPrice + "\u2013" + CONFIG.prices[CONFIG.prices.length - 1].price,
+    "address": { "@type": "PostalAddress", "addressLocality": "Port St. Lucie", "addressRegion": "FL", "addressCountry": "US" },
+    "areaServed": CONFIG.cities.map(function (c) { return { "@type": "City", "name": c }; }),
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Junk removal & cleanout services",
+      "itemListElement": CONFIG.services.map(function (s) {
+        return { "@type": "Offer", "itemOffered": { "@type": "Service", "name": s.name, "description": s.desc } };
+      })
+    },
+    "makesOffer": CONFIG.prices.map(function (t) {
+      return { "@type": "Offer", "name": "Junk removal \u2014 " + t.name, "price": t.price.replace(/[^0-9.]/g, ""), "priceCurrency": "USD" };
+    })
+  };
+  var faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": CONFIG.faq.map(function (f) {
+      return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } };
+    })
+  };
+  [biz, faqSchema].forEach(function (obj) {
+    var tag = document.createElement("script");
+    tag.type = "application/ld+json";
+    tag.textContent = JSON.stringify(obj);
+    document.head.appendChild(tag);
+  });
+})();
+</script>
+</body>
+</html>
