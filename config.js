@@ -10,12 +10,12 @@ const CONFIG = {
   bookingUrl: "/book",  // ← swap when booking moves to your own domain
   logoFile: "/logo.webp",                           // set to "" to hide the logo
   hours: "Mon\u2013Sat, 8am\u20136pm",
-  minItemPrice: "$99",
+  minItemPrice: "$150",
   prices: {                                         // must match the tier names on the site
-    "\u00bc Load": "$149",
-    "\u00bd Load": "$279",
-    "\u00be Load": "$389",
-    "Full Load": "$479"
+    "\u00bc Load": "$225",
+    "\u00bd Load": "$400",
+    "\u00be Load": "$550",
+    "Full Load": "$650"
   }
 };
 /* ============== end CONFIG — no edits needed below ============== */
